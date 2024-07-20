@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root {
+    --green: #04a777;
+    --black1: #212529;
+    --black2: #44474a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--black1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.QRCode {
+    background-color: var(--black2);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.QRCode-title {
+    color: var(--green);
+    font-size: 1.5rem;
+}
+
+.QRCode-subTitle {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    color: white;
+}
+
+.QRCode-input {
+    border: none;
+    outline: none;
+    border-radius: .3rem;
+    width: 100%;
+    margin-top: 2rem;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+}
+
+.QRCode-btn {
+    margin-top: 1rem;
+    border: none;
+    outline: none;
+    border-radius: .3rem;
+    width: 100%;
+    padding: 1rem .4rem;
+    font-size: 1rem;
+    color: white;
+    background-color: var(--green);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.QRCode-btn:hover {
+    opacity: .6;
+}
+
+.QRCode-img {
+    margin-top: 2rem;
+    width: 100%;
+}
